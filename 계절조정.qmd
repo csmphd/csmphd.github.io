@@ -1,8 +1,8 @@
 ---
-title: "계절 조정(Seasonal Adjustment)"
-date: "2026-04-21"
-date-modified: "2026-04-21"
-author: "CSM Ph.D."
+title: 계절 조정(Seasonal Adjustment)
+date: 2026-04-21
+date-modified: 2026-04-21
+author: CSM Ph.D.
 ---
 
 R을 이용한 시계열 데이터의 계절 조정
