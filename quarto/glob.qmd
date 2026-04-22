@@ -3,6 +3,7 @@ title: Quarto Glob
 date: 2026-04-21
 date-modified: 2026-04-21
 author: CSM Ph.D.
+lang: ko
 ---
 
 #### Glob 사용

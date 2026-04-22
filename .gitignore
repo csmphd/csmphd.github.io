@@ -4,6 +4,7 @@
 
 *_files/
 *.html
+*.pdf
 
 **/*.quarto_ipynb
 
