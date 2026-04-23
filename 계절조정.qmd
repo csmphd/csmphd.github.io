@@ -7,8 +7,8 @@ lang: ko
 format: 
     pdf: 
         pdf-engine: xelatex
-        mainfont: "Apple SD 산돌고딕 Neo"
-        CJKmainfont: "Apple SD 산돌고딕 Neo"
+        mainfont: "Noto Sans CJK HK"
+        CJKmainfont: "Noto Sans CJK HK"
 ---
 
 R을 이용한 시계열 데이터의 계절 조정
