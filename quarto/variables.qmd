@@ -1,16 +1,11 @@
 ---
 title: Variables(변수)
-author: [quarto.org, wintree]
+description: Quarto로 렌더링할 때 동적 변수를 포함시키는 방법
+author: quarto.org
 date: 2026-04-21
 date-modified: 2026-04-22
 categories: [quarto, variable, shortcode, credentials, authorization]
-lang: ko
-title-block-banner: true
-language: 
-  title-block-modified: "개정"
 ---
-
-Quarto로 렌더링할 때 동적 변수를 포함시키는 방법
 
 #### 개요
 
@@ -82,13 +77,3 @@ Quarto로 렌더링할 때 동적 변수를 포함시키는 방법
 로그인 자격증명과 같이 프로젝트 렌더링을 위해 필요한 정보는 `_environment.required`와 `_environment.local`을 사용하여 관리하여야 한다.
 
 :::
-
-```{filename="_environment.required"}
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-```
-
-```{filename="_environment.local"}
-AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
-AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI
-```

@@ -1,19 +1,11 @@
 ---
 title: 밀도 그래프 density plot
-author: CSM Ph.D.
+description: R에서 커널 확률 밀도 추정 그래프 그리는 방법
 date: 2026-04-21
 date-modified: 2026-04-21
-lang: ko
-title-block-banner: true
-language: 
-  title-block-modified: "개정"
 ---
 
-커널 확률 밀도 추정 그래프 (density plot) 그리기
-
-## 커널 확률 밀도 추정 그래프 density plot
-
-### 패키지 Graphics
+#### 패키지 Graphics
 
 ```{r}
 plot(density(rnorm(100)))
@@ -25,7 +17,7 @@ plot(dens)
 polygon(dens, col = "Yellow", border = "Yellow")
 ```
 
-### 패키지 ggplot2
+#### 패키지 ggplot2
 
 ```{r}
 library(ggplot2)

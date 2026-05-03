@@ -1,20 +1,14 @@
 ---
 title: 계절 조정(Seasonal Adjustment)
+description: R을 이용한 시계열 데이터의 계절 조정
 date: 2026-04-21
 date-modified: 2026-04-21
-author: CSM Ph.D.
-lang: ko
-format: 
-    pdf: 
-        pdf-engine: xelatex
-        mainfont: "Noto Sans KR"
-        CJKmainfont: "Noto Sans KR"
-title-block-banner: true
-language: 
-  title-block-modified: "개정"
+#format: 
+#    pdf: 
+#        pdf-engine: xelatex
+#        mainfont: "Noto Sans KR"
+#        CJKmainfont: "Noto Sans KR"
 ---
-
-R을 이용한 시계열 데이터의 계절 조정
 
 #### 주요 R 패키지 및 함수
 

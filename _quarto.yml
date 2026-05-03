@@ -1,0 +1,11 @@
+project: 
+  type: website
+
+title-block-banner: true
+lang: ko
+language: 
+  title-block-published: "날짜"
+  title-block-modified: "개정"
+date-format: "'YY년 MM월 DD일"
+
+toc: true

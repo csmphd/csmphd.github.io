@@ -6,7 +6,8 @@
 *.html
 *.pdf
 
-**/*.quarto_ipynb*
+**/*.quarto_ipynb
+**/*.embed.ipynb
 
 .positai
 

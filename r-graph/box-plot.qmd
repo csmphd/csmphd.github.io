@@ -1,26 +1,22 @@
 ---
 title: 상자도표 box plot
-author: CSM Ph.D.
+description: 상자도표(boxplot)로 데이터의 개략적인 분포 파악
 date: 2026-04-21
 date-modified: 2026-04-21
-lang: ko
-title-block-banner: true
-language: 
-  title-block-modified: "개정"
 ---
 
-상자도표(boxplot)로 데이터의 개략적인 분포 파악
-
-## 상자도표 box plot
-
-### 패키지 Graphics
+#### 패키지 Graphics
 
 ```{r}
+#| collapse: true
+#| code-overflow: wrap
+#| prompt: true
+#| comment: "#>"
 str(InsectSprays)
 boxplot(count ~ spray, data = InsectSprays)
 ```
 
-### 패키지 ggplot2
+#### 패키지 ggplot2
 
 ```{r}
 library(ggplot2)

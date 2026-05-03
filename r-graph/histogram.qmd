@@ -1,25 +1,17 @@
 ---
-title: 히스토그램 histigram
-author: CSM Ph.D.
+title: 히스토그램 histogram
+description: 히스토그램(histogram)으로 데이터의 개략적인 분포 파악
 date: 2026-05-03
 date-modified: 2026-05-03
-lang: ko
-title-block-banner: true
-language: 
-  title-block-modified: "개정"
 ---
 
-히스토그램 histogram
-
-## 히스토그램 histogram
-
-### 기본 R 패키지 graphics
+#### 기본 R 패키지 graphics
 
 ```{r}
 hist(rchisq(100, df = 5))
 ```
 
-### 패키지 ggplot2
+#### 패키지 ggplot2
 
 ```{r}
 library(ggplot2)

@@ -1,0 +1,15 @@
+---
+title: Notes ...
+title-block-banner: true
+listing: 
+    contents:
+        - "*.qmd"
+    fields: [title, description, date]
+    type: table
+    sort: "date-modified, desc"
+    sort-ui: true
+    filter-ui: true
+    categories: cloud
+toc: false
+---
+

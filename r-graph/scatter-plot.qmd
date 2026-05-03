@@ -1,29 +1,23 @@
 ---
 title: 산점도 scatter plot
-author: CSM Ph.D.
+description: 산점도(scatter plot)로 데이터의 개략적인 관계 파악
 date: 2026-04-21
 date-modified: 2026-04-21
-title-block-banner: true
-lang: ko
-language: 
-  title-block-modified: "개정"
 ---
 
-산점도(boxplot)로 데이터의 개략적인 관계 파악
-
-## 산점도 scatter plot
-
-### 패키지 Graphics
+#### 패키지 Graphics
 
 ```{r}
+#| collapse: true
 str(cars)
 plot(cars)
 lines(lowess(cars))
 ```
 
-### 패키지 ggplot2
+#### 패키지 ggplot2
 
 ```{r}
+#| collapse: true
 library(ggplot2)
 ggplot(cars, aes(x = speed, y = dist)) + 
   geom_point() + geom_smooth()
