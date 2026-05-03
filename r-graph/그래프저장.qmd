@@ -1,0 +1,45 @@
+---
+title: 그래프 저장
+author: CSM Ph.D.
+date: 2026-04-21
+date-modified: 2026-04-21
+lang: ko
+title-block-banner: true
+---
+
+R에서 작성한 그래프를 저장하는 방법
+
+## 그래프 저장
+
+### 패키지 grDevices
+
+1. R 기본 그래픽 디바이스 함수 bmp(), jpeg(), png(), tiff()를 사용하여 출력 파일의 형식을 각각 BMP, JPEG, PNG, FIFF 형식으로 지정
+2. 원하는 그래프 생성
+3. dev.off() 함수로 사용한 그래픽 디바이스를 종료
+
+```{r}
+#| eval: false
+png()
+# R 기본 그래픽 디바이스 함수들은 기본값이 설정되어 있어서 아무 인자도 전달하지 않으면
+# 파일 이름을 Rplot001.png, Rplot002.png 등으로 저장한다.
+boxplot(count ~ spray, data = InsectSprays)
+hist(mtcars$mpg, main = "MPG Histogram", col = "blue")
+dev.off()
+```
+
+### 패키지 ggplot2
+
+ggsave()한수를 사용하여 "eps", "ps", "tex" (pictex), "pdf", "jpeg", "tiff", "png", "bmp", "svg[^1]", "wmf" (windows 에서만 지원) 형식의 파일로 저장
+
+[^1]: svg 파일 형식은 "svglite" 패키지 설치 필요함
+
+```{r}
+#| eval: false
+library(ggplot2)
+plot1 <- ggplot(data = InsectSprays, aes(x = spray, y = count)) + 
+    geom_boxplot()
+ggsave("insects.jpeg", plot = plot1, width = 4, height = 4, dpi = 300)
+plot2 <- ggplot(mtcars, aes(x = wt, y = mpg)) +
+    geom_point()
+ggsave("cars.svg", plot = plot2, width = 6, height = 4, dpi = 300)
+```
