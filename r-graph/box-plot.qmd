@@ -1,6 +1,6 @@
 ---
-title: 상자도표 boxplot
 author: CSM Ph.D.
+title: 상자도표 box plot
 date: 2026-04-21
 date-modified: 2026-04-21
 lang: ko
@@ -9,8 +9,7 @@ title-block-banner: true
 
 상자도표(boxplot)로 데이터의 개략적인 분포 파악
 
-## 상자도표 boxplot
-
+## 상자도표 box plot
 
 ### 패키지 Graphics
 
