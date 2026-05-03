@@ -1,6 +1,6 @@
 ---
-author: CSM Ph.D.
 title: 상자도표 box plot
+author: CSM Ph.D.
 date: 2026-04-21
 date-modified: 2026-04-21
 lang: ko

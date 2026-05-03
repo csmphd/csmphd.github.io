@@ -1,0 +1,38 @@
+---
+title: 밀도 그래프 density plot
+author: CSM Ph.D.
+date: 2026-04-21
+date-modified: 2026-04-21
+lang: ko
+title-block-banner: true
+---
+
+커널 확률 밀도 추정 그래프 (density plot) 그리기
+
+## 커널 확률 밀도 추정 그래프 density plot
+
+### 패키지 Graphics
+
+```{r}
+plot(density(rnorm(100)))
+```
+
+```{r}
+dens <- density(rnorm(100))
+plot(dens)
+polygon(dens, col = "Yellow", border = "Yellow")
+```
+
+### 패키지 ggplot2
+
+```{r}
+library(ggplot2)
+ggplot(data.frame(val = rnorm(100)), aes(x = val)) +
+    geom_density()
+```
+
+```{r}
+library(ggplot2)
+ggplot(data.frame(val = rnorm(100)), aes(x = val)) +
+    geom_density(fill = "Yellow", alpha = 0.3)
+```
