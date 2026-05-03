@@ -1,0 +1,26 @@
+---
+title: 히스토그램 histigram
+author: CSM Ph.D.
+date: 2026-05-03
+date-modified: 2026-05-03
+lang: ko
+title-block-banner: true
+---
+
+히스토그램 histogram
+
+## 히스토그램 histogram
+
+### 기본 R 패키지 graphics
+
+```{r}
+hist(rchisq(100, df = 5))
+```
+
+### 패키지 ggplot2
+
+```{r}
+library(ggplot2)
+ggplot(data.frame(values = rchisq(100, df = 5)), aes(x = values)) +
+  geom_histogram(binwidth = 2)
+```

@@ -37,9 +37,9 @@ ggsave()한수를 사용하여 "eps", "ps", "tex" (pictex), "pdf", "jpeg", "tiff
 #| eval: false
 library(ggplot2)
 plot1 <- ggplot(data = InsectSprays, aes(x = spray, y = count)) + 
-    geom_boxplot()
+  geom_boxplot()
 ggsave("insects.jpeg", plot = plot1, width = 4, height = 4, dpi = 300)
 plot2 <- ggplot(mtcars, aes(x = wt, y = mpg)) +
-    geom_point()
+  geom_point()
 ggsave("cars.svg", plot = plot2, width = 6, height = 4, dpi = 300)
 ```

@@ -23,6 +23,6 @@ boxplot(count ~ spray, data = InsectSprays)
 ```{r}
 library(ggplot2)
 ggplot(data = InsectSprays, aes(x = spray, y = count)) + 
-    geom_boxplot()
+  geom_boxplot()
 ```
 

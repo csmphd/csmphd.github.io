@@ -28,11 +28,11 @@ polygon(dens, col = "Yellow", border = "Yellow")
 ```{r}
 library(ggplot2)
 ggplot(data.frame(val = rnorm(100)), aes(x = val)) +
-    geom_density()
+  geom_density()
 ```
 
 ```{r}
 library(ggplot2)
 ggplot(data.frame(val = rnorm(100)), aes(x = val)) +
-    geom_density(fill = "Yellow", alpha = 0.3)
+  geom_density(fill = "Yellow", alpha = 0.3)
 ```
