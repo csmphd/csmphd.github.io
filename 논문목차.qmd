@@ -6,6 +6,8 @@ date-modified: 2026-04-22
 categories: [논문]
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 논문의 일반적인 목차, 작성 순서 및 방법 제시

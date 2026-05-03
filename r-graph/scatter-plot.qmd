@@ -5,6 +5,8 @@ date: 2026-04-21
 date-modified: 2026-04-21
 title-block-banner: true
 lang: ko
+language: 
+  title-block-modified: "개정"
 ---
 
 산점도(boxplot)로 데이터의 개략적인 관계 파악

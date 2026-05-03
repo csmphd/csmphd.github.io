@@ -6,6 +6,8 @@ date-modified: 2026-04-22
 categories: [quarto, variable, shortcode, credentials, authorization]
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 Quarto로 렌더링할 때 동적 변수를 포함시키는 방법

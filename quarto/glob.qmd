@@ -4,6 +4,9 @@ date: 2026-04-21
 date-modified: 2026-04-21
 author: CSM Ph.D.
 lang: ko
+title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 #### Glob 사용

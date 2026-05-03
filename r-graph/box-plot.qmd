@@ -5,6 +5,8 @@ date: 2026-04-21
 date-modified: 2026-04-21
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 상자도표(boxplot)로 데이터의 개략적인 분포 파악

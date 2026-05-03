@@ -9,6 +9,9 @@ format:
         pdf-engine: xelatex
         mainfont: "Noto Sans KR"
         CJKmainfont: "Noto Sans KR"
+title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 R을 이용한 시계열 데이터의 계절 조정

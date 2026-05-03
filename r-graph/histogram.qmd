@@ -5,6 +5,8 @@ date: 2026-05-03
 date-modified: 2026-05-03
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 히스토그램 histogram

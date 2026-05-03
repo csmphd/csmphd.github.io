@@ -5,6 +5,8 @@ date: 2026-04-21
 date-modified: 2026-04-21
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 커널 확률 밀도 추정 그래프 (density plot) 그리기

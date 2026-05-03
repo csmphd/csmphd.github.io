@@ -5,6 +5,8 @@ date: 2026-04-21
 date-modified: 2026-04-21
 lang: ko
 title-block-banner: true
+language: 
+  title-block-modified: "개정"
 ---
 
 R에서 작성한 그래프를 저장하는 방법
