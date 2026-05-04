@@ -1,0 +1,15 @@
+{
+  "hash": "6a01f5ec24c7ea477900d932e1e9c5c4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 그래프 저장\ndescription: R 그래프를 다양한 형식으로 저장하는 방법\ndate: 2026-04-21\ndate-modified: 2026-04-21\n---\n\n#### 패키지 grDevices\n\n1. R 기본 그래픽 디바이스 함수 bmp(), jpeg(), png(), tiff()를 사용하여 출력 파일의 형식을 각각 BMP, JPEG, PNG, FIFF 형식으로 지정\n2. 원하는 그래프 생성\n3. dev.off() 함수로 사용한 그래픽 디바이스를 종료\n\n\n::: {.cell}\n\n```{.r .cell-code}\npng()\n# R 기본 그래픽 디바이스 함수들은 기본값이 설정되어 있어서 아무 인자도 전달하지 않으면\n# 파일 이름을 Rplot001.png, Rplot002.png 등으로 저장한다.\nboxplot(count ~ spray, data = InsectSprays)\nhist(mtcars$mpg, main = \"MPG Histogram\", col = \"blue\")\ndev.off()\n```\n:::\n\n\n#### 패키지 ggplot2\n\nggsave()한수를 사용하여 \"eps\", \"ps\", \"tex\" (pictex), \"pdf\", \"jpeg\", \"tiff\", \"png\", \"bmp\", \"svg[^1]\", \"wmf\" (windows 에서만 지원) 형식의 파일로 저장\n\n[^1]: svg 파일 형식은 \"svglite\" 패키지 설치 필요함\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nplot1 <- ggplot(data = InsectSprays, aes(x = spray, y = count)) + \n  geom_boxplot()\nggsave(\"insects.jpeg\", plot = plot1, width = 4, height = 4, dpi = 300)\nplot2 <- ggplot(mtcars, aes(x = wt, y = mpg)) +\n  geom_point()\nggsave(\"cars.svg\", plot = plot2, width = 6, height = 4, dpi = 300)\n```\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
