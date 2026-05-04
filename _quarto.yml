@@ -9,3 +9,5 @@ language:
 date-format: "'YY년 MM월 DD일"
 
 toc: true
+
+freeze: auto
