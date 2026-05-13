@@ -1,5 +1,6 @@
 project: 
   type: website
+  execute-dir: project
 
 title-block-banner: true
 lang: ko
