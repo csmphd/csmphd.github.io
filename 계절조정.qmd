@@ -3,6 +3,8 @@ title: 계절 조정(Seasonal Adjustment)
 description: R을 이용한 시계열 데이터의 계절 조정
 date: 2026-04-21
 date-modified: 2026-04-21
+categories: [계절조정, 시계열]
+
 #format: 
 #    pdf: 
 #        pdf-engine: xelatex

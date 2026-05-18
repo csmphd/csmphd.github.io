@@ -3,6 +3,7 @@ title: ggplot 기초
 description: ggplot2 패키지를 사용한 그래프 그리기
 date: 2026-05-18
 date-modified: 2026-05-18
+categories: [ggplot2]
 ---
 
 [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)

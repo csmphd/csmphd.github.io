@@ -1,0 +1,33 @@
+---
+title: AES Common aesthetic values
+description: 공통적인 시각적 속성(asthetics)
+date: 2026-05-18
+date-modified: 2026-05-18
+categiries: [ggplot2, aes]
+---
+
+#### color and fill
+
+- 문자열(string): "red", "#RRGGBB"
+
+```{r}
+grDevices::colors()
+```
+
+#### linetype
+
+- 정수(integer, 0 ~ 6) 또는 문자열(string)
+- 0 = "black", 1 = "solid", 2 = "dashed", 3 = "dotted", 4 = "dotdash", 5 = "longdash", 6 = "twodash"
+
+#### size
+
+- 정수(integer): 포인트 및 텍스트 크기를 mm 단위로 지정
+
+#### linewidth
+
+- 정수(integer): 포인트 및 텍스트 크기를 0.75mm 단위로 지정
+
+#### shape
+
+- 정수(integer, 0 ~ 25), 모양 이름(shape name), 단일 문자(single character), `.`, `NA`
+
