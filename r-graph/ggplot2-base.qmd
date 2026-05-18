@@ -63,7 +63,7 @@ stat = <stat>, position = <position>)) +
 - last_plot(): 가장 마지막 출력 객체 반환
 - ggsave(): 가장 마지막 출력 객체 저장
 
-참조: [그래프 저장](r-graph/%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)
+참조: [그래프 저장](%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)
 
 #### geom_functions
 
