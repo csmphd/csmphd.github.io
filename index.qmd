@@ -5,12 +5,8 @@ listing:
     contents:
         - "*.qmd"
     type: table
-    fields: 
-      - title
-      - date
     sort-ui: true
     filter-ui: true
-    sort: "date, desc"
     categories: cloud
 toc: false
 ---
