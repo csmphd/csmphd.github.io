@@ -29,5 +29,33 @@ grDevices::colors()
 
 #### shape
 
-- 정수(integer, 0 ~ 25), 모양 이름(shape name), 단일 문자(single character), `.`, `NA`
+- 정수(integer, 0 ~ 25), 모양 이름(shape name), 단일 문자(single character), `.`(작은 사각형), `NA`
 
+::: {.callout-note}
+
+#### shape 분류
+
+-  0 ~ 14: 외곽선 모양
+- 15 ~ 20: 속이 찬 모양(컬러)
+- 21 ~ 25: color(외곽선), fill(내부)
+
+:::
+
+
+```{r}
+library(ggplot2)
+
+# Create a reference data frame for shapes 0-25
+shape_data <- data.frame(
+  shape_id = 0:25,
+  x = 0:25 %% 6,
+  y = -(0:25 %/% 6)
+)
+
+ggplot(shape_data, aes(x, y)) +
+  geom_point(aes(shape = shape_id), size = 5, fill = "red") +
+  geom_text(aes(label = shape_id), vjust = 2.0) +
+  scale_shape_identity() +
+  theme_void() +
+  labs(title = "ggplot2 Shape Reference (0-25)")
+```
