@@ -63,4 +63,10 @@ stat = <stat>, position = <position>)) +
 - last_plot(): 가장 마지막 출력 객체 반환
 - ggsave(): 가장 마지막 출력 객체 저장
 
-참조: [그래프 저장](/r-graph/%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)
+참조: [그래프 저장](r-graph/%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)
+
+#### geom_functions
+
+- 데이터 값(data points)을 표현하기 위해 적절한 geom_*() 함수 사용
+- 변수를 표현하기 위해 geom_*() 함수의 시각 속성(aesthetic property) 사용
+- 모든 geom_*() 함수는 그래픽 레이어를 결과값으로 반환

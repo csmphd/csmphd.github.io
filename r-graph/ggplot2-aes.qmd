@@ -6,6 +6,8 @@ date-modified: 2026-05-18
 categiries: [ggplot2, aes]
 ---
 
+출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+
 #### color and fill
 
 - 문자열(string): "red", "#RRGGBB"
@@ -30,6 +32,13 @@ grDevices::colors()
 #### shape
 
 - 정수(integer, 0 ~ 25), 모양 이름(shape name), 단일 문자(single character), `.`(작은 사각형), `NA`
+-  0 = "square open",  1 = "circle open",  2 = "triangle open",  3 = "plus",  4 = "cross",
+-  5 = "diamond open",  6 = "triangle down open",  7 = "square cross",  8 = "asterisk",
+-  9 = "diamond plus", 10 = "circle plus", 11 = "star", 12 = "square plus",
+- 13 = "circle cross", 14 = "square triangle", 15 = "square", 16 = "circle",
+- 17 = "triangle", 18 = "diamond", 19 = "circle small", 20 = "bullet",
+- 21 = "circle filled", 22 = "square filled", 23 = "diamond filled", 24 = "triangle filled",
+- 25 = "triangle down filled"
 
 ::: {.callout-note}
 
