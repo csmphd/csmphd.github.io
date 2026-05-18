@@ -1,0 +1,65 @@
+---
+title: ggplot 기초
+description: ggplot2 패키지를 사용한 그래프 그리기
+date: 2026-05-18
+date-modified: 2026-05-18
+---
+
+[ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)
+
+#### 개요
+
+1. 모든 그래프는 데이터(data set), 좌표계(coordinate system), 공간요소(geoms: 데이터를 나타내는 시각적 표지)로 표현할 수 있다는 생각[^1]에 기초를 두고,
+2. 데이터 값(variables in the data)을 크기(size), 색상(color), x 위치, y 위치 등과 같은 공간요소의 시각적 속성(asthetics)에 대입(map)하여 그래프 표현
+
+[^1]: Grammer of Graphics
+
+#### 양식(template)
+
+ggplot() 함수로 그래프 객체(plot object)를 생성한 후 다른 그래프 요소들을 `+` 연산자로 결합하는 형식을 갖는다.
+
+::: {.callout-tip}
+
+### 일반적인 ggplot() 호출 형태
+
+- ggplot(data = df, mapping = aes(x, y, other aesthetics))⁠
+- ggplot(data = df)
+- ggplot()
+
+:::
+
+ggplot() 함수를 사용한 그래프 출력 양식은 다음과 같다.
+
+```{r}
+#| eval: false
+# 아래 요소들(data, geometrics, aesthetics)은 사용자가 지정해야 함
+ggplot(data = <data>) +
+<geom_function>(mapping=aes(<mapping>,
+# 그 외 요소들은 기본값이 지정되어 있어 사용자 지정을 생략할 수 있음
+stat = <stat>, position = <position>)) +
+<coordinate_function> +
+<facet_function> +
+<scale_function> +
+<theme_function>
+```
+
+##### 사용자 지정이 필요한 요소들
+- 데이터(data): 함수 ggplot2()의 인자 data로 지정
+- 시각적 속성(asthetics): 함수 aes()를 사용허여 함수 ggplot2()의 인자로 지정하거나 geom_*() 함수의 인자 mapping에 지정
+- 공간요소(geometrics): 그래프 층위(layer)별로 함수 geom_*() 사용하여 지정
+
+##### 기본값을 가지고 있는 요소들
+
+- stat: 출력에 사용할 새로운 변수 생성
+- position: 공간요소의 출력 위치 조정
+- coordinate_function: 출력 죄표계 설정
+- facet_function: 출력을 여러개로 나누어 표시 
+- scale_function: 출력에 사용할 축적 설정
+- theme_function: 출력 형식 설정
+
+#### 저장 및 불러오기
+
+- last_plot(): 가장 마지막 출력 객체 반환
+- ggsave(): 가장 마지막 출력 객체 저장
+
+참조: [그래프 저장](/r-graph/%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)
