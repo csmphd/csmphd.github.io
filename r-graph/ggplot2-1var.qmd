@@ -1,0 +1,84 @@
+---
+title: 단일 변수 그래프
+description: Gems for One Variable
+date: 2026-05-18
+date-modified: 2026-05-18
+categories: [geom, one var]
+---
+
+출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+
+```{r}
+library(ggplot2)
+c <- ggplot(mpg, aes(hwy))
+c2 <- ggplot(mpg)
+d <- ggplot(mpg, aes(fl))
+```
+
+#### 단일 변수(연속)
+
+##### 면적: geom_area()
+
+- 면적 그래프 그리는 함수
+- aes() 인자: x, y, alpha, color, fill, linetype, linewidth
+
+```{r}
+c + geom_area(stat = "bin")
+```
+
+##### 밀도: geom_density()
+
+- 커널 밀도 통계량을 계산하고 커널 밀도 그래프 그리는 함수
+- aes() 인자: x, y, alpha, color, fill, group, linetype, linewidth, weight
+
+```{r}
+c + geom_density(kernel = "gaussian")
+```
+
+##### geom_dotplot()
+
+- 점 그래프 그리는 함수
+- aes() 인자: x, y, alpha, color, fill
+
+```{r}
+c + geom_dotplot()
+```
+
+##### geom_freqpoly()
+
+- 도수분포 다각형 그래프 그리는 함수
+- aes() 인자: x, y, alpha, color, group, linetype, linewidth
+
+```{r}
+c + geom_freqpoly()
+```
+
+##### 히스토그램: geom_histogram()
+
+- 히스토그램 그리는 함수
+- aes() 인자: x, y, alpha, color, fill, linetype, linewidth, weight
+
+```{r}
+c + geom_histogram(binwidth = 5)
+```
+
+#### geon_qq()
+
+- Q-Q 플롯 그리는 함수
+- aes() 인자: x, y, alpha, color, fill, linetype, size, weight
+
+```{r}
+c2 + geom_qq(aes(sample = hwy))
+```
+
+
+#### 단일 변수(이산)
+
+##### 막대: geom_bar()
+
+- 막대 그래프 그리는 함수
+- aes() 인자: x, alpha, color, fill, linetype, linewidth, weight
+
+```{r}
+d + geom_bar()
+```

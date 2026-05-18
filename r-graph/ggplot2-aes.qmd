@@ -1,6 +1,6 @@
 ---
-title: AES Common aesthetic values
-description: 공통적인 시각적 속성(asthetics)
+title: 공통적인 시각속성(asthetics)
+description: AES Common aesthetic values
 date: 2026-05-18
 date-modified: 2026-05-18
 categiries: [ggplot2, aes]

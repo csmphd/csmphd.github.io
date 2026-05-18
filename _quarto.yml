@@ -2,6 +2,9 @@ project:
   type: website
   execute-dir: project
 
+website: 
+  draft-mode: visible
+
 title-block-banner: true
 lang: ko
 language: 
