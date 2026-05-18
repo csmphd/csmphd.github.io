@@ -4,9 +4,13 @@ title-block-banner: true
 listing: 
     contents:
         - "*.qmd"
+    fields: [title, description, date-modified]
     type: table
-    sort-ui: true
-    filter-ui: true
+    sort:
+        - "date-modified desc"
+        - "title"
+    sort-ui: false
+    filter-ui: false
     categories: cloud
 toc: false
 ---
