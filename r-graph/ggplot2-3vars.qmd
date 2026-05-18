@@ -37,7 +37,7 @@ l + geom_contour(aes(z = z))
 
 ```{r}
 #| eval: false
-l + geom_contour_filled(aes(z = z, fill = z))
+l + geom_contour_filled(aes(fill = z))
 ```
 
 ##### geom_raster()
