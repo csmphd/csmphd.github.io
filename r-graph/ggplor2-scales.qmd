@@ -148,7 +148,7 @@ p + scale_shape_manual(values = c(3:7))
 - 값을 모양의 반경에 적용
 
 ```{r}
-p + scale_radius(range = c(1,6))
+p + scale_radius(range = c(1, 6))
 ```
 
 ##### scale_size_area()

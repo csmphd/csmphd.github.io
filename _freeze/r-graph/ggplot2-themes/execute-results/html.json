@@ -1,0 +1,17 @@
+{
+  "hash": "3e93e444e3674deef00f53d0b6029e51",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 그래프 테마\ndescription: Themes\ndate: 2026-05-21\ndate-modified: 2026-05-21\ncategories: [theme]\n---\n\n참조: [Data Visualization with ggplot2::Cheat Sheet \"Themes\"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#themes)\n\n#### 그래프 테마\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nr <- ggplot(mpg, aes(fl)) + geom_bar()\n```\n:::\n\n\n##### theme_bw()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_bw()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n##### theme_gray()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_gray()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n##### theme_dark()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_dark()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n##### theme_classic()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_classic()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\n##### theme_light()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_light()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n##### theme_linedraw()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_linedraw()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::\n\n\n##### theme_minimal()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_minimal()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-8-1.png){width=672}\n:::\n:::\n\n\n##### theme_void()\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme_void()\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-9-1.png){width=672}\n:::\n:::\n\n\n#### 테마 사용자화\n\n- theme() 함수를 사용하여 axis, legend, panel, facet 같은 속성을 설정\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + labs(title = \"Title\") + theme(plot.title.position = \"plot\")\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-10-1.png){width=672}\n:::\n:::\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nr + theme(panel.background = element_rect(fill = \"blue\"))\n```\n\n::: {.cell-output-display}\n![](ggplot2-themes_files/figure-html/unnamed-chunk-11-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "ggplot2-themes_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

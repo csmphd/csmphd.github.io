@@ -1,0 +1,72 @@
+---
+title: 좌표계
+description: Coordinate Systems
+date: 2026-05-21
+date-modified: 2026-05-21
+categories: [좌표계]
+---
+
+참조: [Data Visualization with ggplot2::Cheat Sheet "Coordinate Systems"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#coordinate-systems)
+
+```{r}
+library(ggplot2)
+d <- ggplot(mpg, aes(fl))
+u <- d + geom_bar()
+u
+```
+
+##### coord_cartesian()
+
+- 기본 카테시안 좌표계
+- xlim, ylim
+
+```{r}
+u + coord_cartesian(xlim = c(0, 5))
+```
+
+##### coord_fixed()
+
+- x축 y축 비율이 고정된 카테시안 좌표계
+- ratio, xlim, ylim
+
+```{r}
+u + coord_fixed(ratio = 1 / 2)
+```
+
+##### 축 바꾸기
+
+- x축, y축 전환(flip)
+
+```{r}
+ggplot(mpg, aes(y = fl)) + geom_bar()
+```
+
+##### coord_polar()
+
+- 극좌표계
+- theta, start, direction
+
+```{r}
+u + coord_polar(theta = "x", direction = 1)
+```
+
+##### coord_trans()
+
+- 카테시안 좌표계 변환
+- x, y, xlim, ylim
+
+```{r}
+u + coord_trans(y = "sqrt")
+```
+
+##### coord_sf()
+
+- 모든 레이어가 공통 좌표계를 사용하도록 지정
+- xlim, ylim, crs
+
+```{r}
+#| eval: false
+# 에러 확인요
+π + coord_sf()
+```
+

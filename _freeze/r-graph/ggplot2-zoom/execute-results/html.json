@@ -1,0 +1,17 @@
+{
+  "hash": "c0b3770d1e728fd1536cac314a5daaa2",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 그래프확대\ndescription: Zooming\ndate: 2026-05-21\ndate-modified: 2026-05-21\ncategories: [zoom]\n---\n\n\n참조: [Data Visualization with ggplot2::Cheat Sheet \"Zooming\"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#zooming)\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\nlibrary(ggplot2)\nt <- ggplot(mpg, aes(cty, hwy)) + geom_point()\nt\n```\n\n::: {.cell-output-display}\n![](ggplot2-zoom_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n##### 자르지 않고 확대\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + coord_cartesian(xlim = c(0, 100), ylim = c(10,20))\n```\n\n::: {.cell-output-display}\n![](ggplot2-zoom_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\nt + scale_x_continuous(limits = c(0, 100)) + scale_y_continuous(limits = c(0, 100))\n```\n\n::: {.cell-output-display}\n![](ggplot2-zoom_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n##### 자르면서 확대(보이지 않는 데이터 제거)\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\nt + xlim(0, 100) + ylim(10, 20)\n## Warning: Removed 145 rows containing missing values or values outside the scale range\n## (`geom_point()`).\n```\n\n::: {.cell-output-display}\n![](ggplot2-zoom_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n",
+    "supporting": [
+      "ggplot2-zoom_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
