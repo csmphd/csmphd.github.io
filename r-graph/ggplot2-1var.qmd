@@ -6,7 +6,7 @@ date-modified: 2026-05-18
 categories: [geom, one var]
 ---
 
-출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'One Variable'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#one-variable---continuous)
 
 ```{r}
 library(ggplot2)

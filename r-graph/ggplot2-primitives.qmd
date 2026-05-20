@@ -6,7 +6,7 @@ date-modified: 2026-05-18
 categories: [geom, primitive]
 ---
 
-출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'Graphical Primitives'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#graphical-primitives)
 
 #### 그래프 기본 요소(Graphic Primitives)
 

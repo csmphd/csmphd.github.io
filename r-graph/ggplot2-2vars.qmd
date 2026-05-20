@@ -6,7 +6,7 @@ date-modified: 2026-05-18
 categories: [geom, two vars]
 ---
 
-출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'Two Variables'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#two-variables---both-continuous)
 
 ```{r}
 library(ggplot2)
@@ -241,7 +241,7 @@ j + geom_pointrange()
 ```
 
 
-#### 지도
+#### 지도(Maps)
 
 ##### geom_sf()
 

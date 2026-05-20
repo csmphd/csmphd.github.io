@@ -8,6 +8,8 @@ categories: [ggplot2]
 
 [ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)
 
+참조: [Data Visualization with ggplot2::Cheat Sheet "Basics"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#basics)
+
 #### 개요
 
 1. 모든 그래프는 데이터(data set), 좌표계(coordinate system), 공간요소(geoms: 데이터를 나타내는 시각적 표지)로 표현할 수 있다는 생각[^1]에 기초를 두고,

@@ -6,7 +6,7 @@ date-modified: 2026-05-18
 categiries: [ggplot2, aes]
 ---
 
-출처: [Data Visualization with ggplot2::CHEATSHEET](https://rstudio.github.io/cheatsheets/html/data-visualization.html)
+참조: [Data Visualization with ggplot2::Cheat Sheet "Aes"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#aes)
 
 #### color and fill
 

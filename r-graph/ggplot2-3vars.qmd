@@ -7,6 +7,8 @@ categories: [geom, three vars]
 draft: true
 ---
 
+참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'Three Variables'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#three-variables)
+
 ```{r}
 library(ggplot2)
 seals$z <- with(seals, sqrt(delta_long^2 + delta_lat^2))
