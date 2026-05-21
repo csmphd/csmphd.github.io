@@ -1,9 +1,9 @@
 ---
-title: 라벨 및 색인
-description: Lables and Legends
+title: 라벨 및 색인 Lables and Legends
+description: R 그래프 라벨 및 색인 설정
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [label, legend]
+categories: [ggplot2, label, legend]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Labels and Legends"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#labels-and-legends)

@@ -1,9 +1,9 @@
 ---
-title: 기본 그래프
-description: geoms for graphic primitives
+title: 기본 그래프 Geoms for Graphic Primitives
+description: R 그래프를 구성하는 기본 시각 요소
 date: 2026-05-18
 date-modified: 2026-05-18
-categories: [geom, primitive]
+categories: [ggplot2, geom, primitive]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'Graphical Primitives'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#graphical-primitives)

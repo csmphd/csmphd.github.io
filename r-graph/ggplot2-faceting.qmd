@@ -1,9 +1,9 @@
 ---
-title: 그래프 분리
-description: Faceting
+title: 그래프 분리 Faceting
+description: R 그래프를 여러개의 보조 그래프로 출력
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [facet]
+categories: [ggplot2, facet]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Faceting"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#faceting)

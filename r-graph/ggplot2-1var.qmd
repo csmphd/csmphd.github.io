@@ -1,9 +1,9 @@
 ---
-title: 단일 변수 그래프
-description: Gems for One Variable
+title: 단일 변수 그래프 Gems for One Variable
+description: 단일 변수를 적용한 R 그래프
 date: 2026-05-18
 date-modified: 2026-05-18
-categories: [geom, one var]
+categories: [ggplot2, geom, one var]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'One Variable'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#one-variable---continuous)

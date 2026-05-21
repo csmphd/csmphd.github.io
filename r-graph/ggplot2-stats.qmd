@@ -1,9 +1,9 @@
 ---
-title: 그래프 레이어를 위한 새로운 변수 생성
-description: An alternative way to build a layer
+title: 그래프 레이어를 위한 새로운 변수 생성 Stats
+description: An alternative way to build a layer using Stats
 date: 2026-05-20
 date-modified: 2026-05-20
-categories: [stat, variable]
+categories: [ggplot2, stat, variable]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Stats"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#stats)

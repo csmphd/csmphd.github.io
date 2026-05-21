@@ -1,8 +1,9 @@
 ---
-title: 밀도 그래프 density plot
+title: 밀도 그래프 Density Plot
 description: R에서 커널 확률 밀도 추정 그래프 그리는 방법
 date: 2026-04-21
 date-modified: 2026-04-21
+categories: [ggplot2, base graph, density plot]
 ---
 
 #### 패키지 Graphics

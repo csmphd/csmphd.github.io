@@ -1,9 +1,9 @@
 ---
-title: 그래프 테마
-description: Themes
+title: 그래프 테마 Themes
+description: R 그래프 기본 설정 테마
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [theme]
+categories: [ggplot2, theme]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Themes"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#themes)

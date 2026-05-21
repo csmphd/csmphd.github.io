@@ -1,9 +1,9 @@
 ---
-title: 세개의 변수 그래프
-description: Geoms for Three Variables
+title: 세개의 변수 그래프 Geoms for Three Variables
+description: 세 변수를 적용한 R 그래프
 date: 2026-05-18
 date-modified: 2026-05-18
-categories: [geom, three vars]
+categories: [ggplot2, geom, three vars]
 draft: true
 ---
 

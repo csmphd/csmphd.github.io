@@ -1,9 +1,9 @@
 ---
-title: 두개의 변수 그래프
-description: Geoms for Two Variables
+title: 두개의 변수 그래프 Geoms for Two Variables
+description: 두 변수를 적용한 R 그래프
 date: 2026-05-18
 date-modified: 2026-05-18
-categories: [geom, two vars]
+categories: [ggplot2, geom, two vars]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Geoms" 'Two Variables'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#two-variables---both-continuous)

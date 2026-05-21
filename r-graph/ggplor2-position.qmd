@@ -1,9 +1,9 @@
 ---
-title: 위치 조정
-description: Position Adjustment
+title: 위치 조정 Position Adjustment
+description: R 그래프에서 데이터 출력 위치 조정
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [position]
+categories: [ggplot2, position adjustment]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Position Adjustment"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#position-adjustments)

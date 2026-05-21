@@ -1,6 +1,6 @@
 ---
 title: ggplot 기초
-description: ggplot2 패키지를 사용한 그래프 그리기
+description: ggplot2 패키지를 사용한 R 그래프 기초
 date: 2026-05-18
 date-modified: 2026-05-18
 categories: [ggplot2]

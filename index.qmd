@@ -9,8 +9,8 @@ listing:
     sort:
         - "date-modified desc"
         - "title"
-    sort-ui: false
-    filter-ui: false
+    sort-ui: true
+    filter-ui: true
     categories: cloud
 toc: false
 ---

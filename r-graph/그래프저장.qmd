@@ -1,8 +1,9 @@
 ---
-title: 그래프 저장
+title: 그래프 저장 Save Plot
 description: R 그래프를 다양한 형식으로 저장하는 방법
 date: 2026-04-21
 date-modified: 2026-04-21
+categories: [ggplot2, base graph, save, plot]
 ---
 
 #### 패키지 grDevices

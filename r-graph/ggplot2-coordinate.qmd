@@ -1,9 +1,9 @@
 ---
-title: 좌표계
-description: Coordinate Systems
+title: 좌표계 Coordinate Systems
+description: R 그래프 좌표계
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [좌표계]
+categories: [ggplot2, 좌표계 coordinate]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Coordinate Systems"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#coordinate-systems)

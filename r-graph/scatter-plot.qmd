@@ -3,6 +3,7 @@ title: 산점도 scatter plot
 description: 산점도(scatter plot)로 데이터의 개략적인 관계 파악
 date: 2026-04-21
 date-modified: 2026-04-21
+categories: [ggplot2, base graph, scapper plot]
 ---
 
 #### 패키지 Graphics

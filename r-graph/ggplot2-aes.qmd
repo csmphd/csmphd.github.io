@@ -1,6 +1,6 @@
 ---
-title: 공통적인 시각속성(asthetics)
-description: AES Common aesthetic values
+title: 공통적인 시각속성 Common Asthetics
+description: R의 공통 시각요소
 date: 2026-05-18
 date-modified: 2026-05-18
 categiries: [ggplot2, aes]

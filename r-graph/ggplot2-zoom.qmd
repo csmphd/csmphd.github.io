@@ -1,9 +1,9 @@
 ---
-title: 그래프확대
-description: Zooming
+title: 그래프 확대 Zooming
+description: R 그래프 부분 확대
 date: 2026-05-21
 date-modified: 2026-05-21
-categories: [zoom]
+categories: [ggplot2, zoom]
 ---
 
 

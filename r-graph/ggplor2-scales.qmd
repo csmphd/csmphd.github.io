@@ -1,9 +1,9 @@
 ---
-title: 데이터 값을 그래픽 요소의 값에 대응
-description: Override defaults with scales
+title: 데이터 값을 그래픽 요소의 값에 대응 Scales
+description: R 그래프에서 Scales 패키지 사용
 date: 2026-05-20
 date-modified: 2026-05-20
-categories: [scale]
+categories: [ggplot2, scale]
 ---
 
 참조: [Data Visualization with ggplot2::Cheat Sheet "Scales"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#scales)
