@@ -1,6 +1,6 @@
 ---
 title: 그래프 레이어를 위한 새로운 변수 생성 Stats
-description: An alternative way to build a layer using Stats
+description: stat_*() 함수를 사용한 그래프 생성용 변수 생성 
 date: 2026-05-20
 date-modified: 2026-05-20
 categories: [ggplot2, stat, variable]

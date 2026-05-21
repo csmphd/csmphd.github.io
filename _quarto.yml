@@ -10,7 +10,7 @@ lang: ko
 language: 
   title-block-published: "날짜"
   title-block-modified: "개정"
-date-format: iso
+date-format: "YY년 M월 D일"
 
 toc: true
 
