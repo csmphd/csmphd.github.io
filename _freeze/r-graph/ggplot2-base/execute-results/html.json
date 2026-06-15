@@ -1,0 +1,15 @@
+{
+  "hash": "4ce84ba6cf909ef74d15d3db9ebb35a9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: ggplot 기초\ndescription: ggplot2 패키지를 사용한 R 그래프 기초\ndate: 2026-05-18\ndate-modified: 2026-05-18\ncategories: [ggplot2]\n---\n\n[ggplot2: Elegant Graphics for Data Analysis](https://ggplot2-book.org)\n\n참조: [Data Visualization with ggplot2::Cheat Sheet \"Basics\"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#basics)\n\n#### 개요\n\n1. 모든 그래프는 데이터(data set), 좌표계(coordinate system), 공간요소(geoms: 데이터를 나타내는 시각적 표지)로 표현할 수 있다는 생각[^1]에 기초를 두고,\n2. 데이터 값(variables in the data)을 크기(size), 색상(color), x 위치, y 위치 등과 같은 공간요소의 시각적 속성(asthetics)에 대입(map)하여 그래프 표현\n\n[^1]: Grammer of Graphics\n\n#### 양식(template)\n\nggplot() 함수로 그래프 객체(plot object)를 생성한 후 다른 그래프 요소들을 `+` 연산자로 결합하는 형식을 갖는다.\n\n::: {.callout-tip}\n\n### 일반적인 ggplot() 호출 형태\n\n- ggplot(data = df, mapping = aes(x, y, other aesthetics))⁠\n- ggplot(data = df)\n- ggplot()\n\n:::\n\nggplot() 함수를 사용한 그래프 출력 양식은 다음과 같다.\n\n\n::: {.cell}\n\n```{.r .cell-code}\n# 아래 요소들(data, geometrics, aesthetics)은 사용자가 지정해야 함\nggplot(data = <data>) +\n<geom_function>(mapping=aes(<mapping>,\n# 그 외 요소들은 기본값이 지정되어 있어 사용자 지정을 생략할 수 있음\nstat = <stat>, position = <position>)) +\n<coordinate_function> +\n<facet_function> +\n<scale_function> +\n<theme_function>\n```\n:::\n\n\n##### 사용자 지정이 필요한 요소들\n- 데이터(data): 함수 ggplot2()의 인자 data로 지정\n- 시각적 속성(asthetics): 함수 aes()를 사용허여 함수 ggplot2()의 인자로 지정하거나 geom_*() 함수의 인자 mapping에 지정\n- 공간요소(geometrics): 그래프 층위(layer)별로 함수 geom_*() 사용하여 지정\n\n##### 기본값을 가지고 있는 요소들\n\n- stat: 출력에 사용할 새로운 변수 생성\n- position: 공간요소의 출력 위치 조정\n- coordinate_function: 출력 죄표계 설정\n- facet_function: 출력을 여러개로 나누어 표시 \n- scale_function: 출력에 사용할 축적 설정\n- theme_function: 출력 형식 설정\n\n#### 저장 및 불러오기\n\n- last_plot(): 가장 마지막 출력 객체 반환\n- ggsave(): 가장 마지막 출력 객체 저장\n\n참조: [그래프 저장](%EA%B7%B8%EB%9E%98%ED%94%84%EC%A0%80%EC%9E%A5.qmd)\n\n#### geom_functions\n\n- 데이터 값(data points)을 표현하기 위해 적절한 geom_*() 함수 사용\n- 변수를 표현하기 위해 geom_*() 함수의 시각 속성(aesthetic property) 사용\n- 모든 geom_*() 함수는 그래픽 레이어를 결과값으로 반환\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

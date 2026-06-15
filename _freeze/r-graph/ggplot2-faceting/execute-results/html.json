@@ -1,0 +1,17 @@
+{
+  "hash": "9446b0f883514479a529decb8f3d1a88",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 그래프 분리 Faceting\ndescription: R 그래프를 여러개의 보조 그래프로 출력\ndate: 2026-05-21\ndate-modified: 2026-05-21\ncategories: [ggplot2, facet]\n---\n\n참조: [Data Visualization with ggplot2::Cheat Sheet \"Faceting\"](https://rstudio.github.io/cheatsheets/html/data-visualization.html#faceting)\n\n#### 개요\n\n하나 이상의 이산 변수값을 기준으로 그래프를 여러 개로 나누어 표시\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nt <- ggplot(mpg, aes(cty, hwy)) + geom_point()\n```\n:::\n\n\n\n#### 형태\n\n##### 열로 배치\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(. ~ fl)\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n##### 행으로 배치\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(year ~ .)\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n##### 행, 열로 배치\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(year ~ fl)\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n##### 사각형 안으로 넣기\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_wrap(~ fl)\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\n\n#### 보조 그래프별로 축의 범위를 다르게 설정\n\n- `scales` 속성을 \"free\", \"free_x\", \"free_y\"로 설정\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(drv ~ fl, scales = \"free\")\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n#### 서브 그래프 라벨\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(. ~ fl, labeller = label_both)\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nt + facet_grid(fl ~ ., labeller = label_bquote(alpha ^ .(fl)))\n```\n\n::: {.cell-output-display}\n![](ggplot2-faceting_files/figure-html/unnamed-chunk-8-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "ggplot2-faceting_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

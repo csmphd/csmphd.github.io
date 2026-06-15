@@ -1,0 +1,17 @@
+{
+  "hash": "fd8bf228de92c283d6fabac280db6cc5",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 단일 변수 그래프 Gems for One Variable\ndescription: 단일 변수를 적용한 R 그래프\ndate: 2026-05-18\ndate-modified: 2026-05-18\ncategories: [ggplot2, geom, one var]\n---\n\n참조: [Data Visualization with ggplot2::Cheat Sheet \"Geoms\" 'One Variable'](https://rstudio.github.io/cheatsheets/html/data-visualization.html#one-variable---continuous)\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nc <- ggplot(mpg, aes(hwy))\nc2 <- ggplot(mpg)\nd <- ggplot(mpg, aes(fl))\n```\n:::\n\n\n#### 단일 변수(연속)\n\n##### 면적: geom_area()\n\n- 면적 그래프 그리는 함수\n- aes() 인자: x, y, alpha, color, fill, linetype, linewidth\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc + geom_area(stat = \"bin\")\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n##### 밀도: geom_density()\n\n- 커널 밀도 통계량을 계산하고 커널 밀도 그래프 그리는 함수\n- aes() 인자: x, y, alpha, color, fill, group, linetype, linewidth, weight\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc + geom_density(kernel = \"gaussian\")\n```\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-3-1.png){width=672}\n:::\n:::\n\n\n##### geom_dotplot()\n\n- 점 그래프 그리는 함수\n- aes() 인자: x, y, alpha, color, fill\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc + geom_dotplot()\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\nBin width defaults to 1/30 of the range of the data. Pick better value with\n`binwidth`.\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-4-1.png){width=672}\n:::\n:::\n\n\n##### geom_freqpoly()\n\n- 도수분포 다각형 그래프 그리는 함수\n- aes() 인자: x, y, alpha, color, group, linetype, linewidth\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc + geom_freqpoly()\n```\n\n::: {.cell-output .cell-output-stderr}\n\n```\n`stat_bin()` using `bins = 30`. Pick better value `binwidth`.\n```\n\n\n:::\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-5-1.png){width=672}\n:::\n:::\n\n\n##### 히스토그램: geom_histogram()\n\n- 히스토그램 그리는 함수\n- aes() 인자: x, y, alpha, color, fill, linetype, linewidth, weight\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc + geom_histogram(binwidth = 5)\n```\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-6-1.png){width=672}\n:::\n:::\n\n\n#### geon_qq()\n\n- Q-Q 플롯 그리는 함수\n- aes() 인자: x, y, alpha, color, fill, linetype, size, weight\n\n\n::: {.cell}\n\n```{.r .cell-code}\nc2 + geom_qq(aes(sample = hwy))\n```\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-7-1.png){width=672}\n:::\n:::\n\n\n\n#### 단일 변수(이산)\n\n##### 막대: geom_bar()\n\n- 막대 그래프 그리는 함수\n- aes() 인자: x, alpha, color, fill, linetype, linewidth, weight\n\n\n::: {.cell}\n\n```{.r .cell-code}\nd + geom_bar()\n```\n\n::: {.cell-output-display}\n![](ggplot2-1var_files/figure-html/unnamed-chunk-8-1.png){width=672}\n:::\n:::\n\n",
+    "supporting": [
+      "ggplot2-1var_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
