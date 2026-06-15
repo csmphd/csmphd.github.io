@@ -24,17 +24,27 @@ dev.off()
 
 #### 패키지 ggplot2
 
-ggsave()한수를 사용하여 "eps", "ps", "tex" (pictex), "pdf", "jpeg", "tiff", "png", "bmp", "svg[^1]", "wmf" (windows 에서만 지원) 형식의 파일로 저장
-
+ggsave()함수를 사용하여 "eps", "ps", "tex" (pictex), "pdf", "jpeg", "tiff", "png", "bmp", "svg[^1]", "wmf" (windows 에서만 지원) 형식의 파일로 저장
+2
 [^1]: svg 파일 형식은 "svglite" 패키지 설치 필요함
 
 ```{r}
 #| eval: false
 library(ggplot2)
+library(svglite)
 plot1 <- ggplot(data = InsectSprays, aes(x = spray, y = count)) + 
   geom_boxplot()
 ggsave("insects.jpeg", plot = plot1, width = 4, height = 4, dpi = 300)
 plot2 <- ggplot(mtcars, aes(x = wt, y = mpg)) +
   geom_point()
 ggsave("cars.svg", plot = plot2, width = 6, height = 4, dpi = 300)
+```
+
+#### 그래프 객체 저장 및 읽어 오기
+
+```{r}
+#| eval: false
+gr <- boxplot(count ~ spray, data = InsectSprays)
+saveRDS(gr, file = "bplot.RDS")
+ggr <- readRDS("bplot.RDS")
 ```
