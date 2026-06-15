@@ -18,7 +18,6 @@ barplot(table(mpg$class), las = 2)
 ```{r}
 #| collapse: true
 library(ggplot2)
-ggplot(mpg, aes(class)) +
-  geom_bar()
+ggplot(mpg, aes(class)) + geom_bar()
 ```
 
