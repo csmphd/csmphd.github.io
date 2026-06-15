@@ -15,7 +15,7 @@ slices <- c(75, 17, 3, 5)
 labels <- c("인터넷신문", "주간신문", "일간신문", "잡지등")
 
 # set Korean font for macOS
-par(family="Apple SD 산돌고딕 Neo")
+par(family = "Apple SD 산돌고딕 Neo")
 # Create a simple pie chart
 pie(slices, labels = labels, main = "언론사 매체별 구성 비율")
 ```
@@ -36,7 +36,7 @@ ggplot(df, aes(x = "", y = count, fill = media)) +
   geom_bar(stat = "identity", width = 1) +
   coord_polar("y", start = 0) +
   # Removes background and grid lines and set Korean font for macOS
-  theme_set(theme_void(base_family = "Apple SD 산돌고딕 Neo")) + 
+  theme_set(theme_void(base_family = "Apple SD 산돌고딕 Neo")) +
   labs(title = "언론사 매체별 구성 비율")
 ```
 
