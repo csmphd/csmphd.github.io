@@ -47,4 +47,5 @@ ggsave("cars.svg", plot = plot2, width = 6, height = 4, dpi = 300)
 gr <- boxplot(count ~ spray, data = InsectSprays)
 saveRDS(gr, file = "bplot.RDS")
 ggr <- readRDS("bplot.RDS")
+print(ggr)
 ```
