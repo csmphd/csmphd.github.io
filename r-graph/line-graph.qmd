@@ -10,7 +10,7 @@ categories: [ggplot2, base graph, line graph]
 
 ```{r}
 #| collapse: true
-plot(economics$date, economics$unemploy, type = "l")
+plot(ggplot2::economics$date, ggplot2::economics$unemploy, type = "l")
 ```
 
 #### 패키지 ggplot2

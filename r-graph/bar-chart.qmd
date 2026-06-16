@@ -10,7 +10,7 @@ categories: [ggplot2, base graph, bar plot]
 
 ```{r}
 #| collapse: true
-barplot(table(mpg$class), las = 2)
+barplot(table(ggplot2::mpg$class), las = 2)
 ```
 
 #### 패키지 ggplot2

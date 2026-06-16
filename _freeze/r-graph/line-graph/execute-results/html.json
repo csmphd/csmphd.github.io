@@ -1,0 +1,17 @@
+{
+  "hash": "d5b15cadb44691ea439d072e544a446b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 선 그래프 line graph\ndescription: 선 그래프(line graph)로 데이터의 변화를 추적\ndate: 2026-05-16\ndate-modified: 2026-05-16\ncategories: [ggplot2, base graph, line graph]\n---\n\n#### 패키지 Graphics\n\n\n::: {.cell}\n\n```{.r .cell-code}\nplot(ggplot2::economics$date, ggplot2::economics$unemploy, type = \"l\")\n```\n\n::: {.cell-output-display}\n![](line-graph_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n#### 패키지 ggplot2\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nggplot(economics, aes(date, unemploy)) + geom_line()\n```\n\n::: {.cell-output-display}\n![](line-graph_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n",
+    "supporting": [
+      "line-graph_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

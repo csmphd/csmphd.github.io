@@ -1,8 +1,8 @@
 {
-  "hash": "35d0379305ea8c33eed9baace7488b0b",
+  "hash": "39a08da8605e4d70c7977fb9cb2b59ec",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: 상자도표 Box Plot\ndescription: 상자도표(boxplot)로 데이터의 개략적인 분포 파악\ndate: 2026-04-21\ndate-modified: 2026-04-21\ncategories: [ggplot2, base graph, box plot]\n---\n\n#### 패키지 Graphics\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\n> str(InsectSprays)\n#> 'data.frame':\t72 obs. of  2 variables:\n#>  $ count: num  10 7 20 14 14 12 10 23 17 20 ...\n#>  $ spray: Factor w/ 6 levels \"A\",\"B\",\"C\",\"D\",..: 1 1 1 1 1 1 1 1 1 1 ...\n> boxplot(count ~ spray, data = InsectSprays)\n```\n\n::: {.cell-output-display}\n![](box-plot_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n#### 패키지 ggplot2\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nggplot(data = InsectSprays, aes(x = spray, y = count)) + \n  geom_boxplot()\n```\n\n::: {.cell-output-display}\n![](box-plot_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n",
+    "markdown": "---\ntitle: 상자도표 Box Plot\ndescription: 상자도표(boxplot)로 데이터의 개략적인 분포 파악\ndate: 2026-04-21\ndate-modified: 2026-04-21\ncategories: [ggplot2, base graph, box plot]\n---\n\n#### 패키지 Graphics\n\n\n::: {.cell}\n\n```{.r .cell-code .code-overflow-wrap}\n> str(InsectSprays)\n#> 'data.frame':\t72 obs. of  2 variables:\n#>  $ count: num  10 7 20 14 14 12 10 23 17 20 ...\n#>  $ spray: Factor w/ 6 levels \"A\",\"B\",\"C\",\"D\",..: 1 1 1 1 1 1 1 1 1 1 ...\n> boxplot(count ~ spray, data = InsectSprays)\n```\n\n::: {.cell-output-display}\n![](box-plot_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n#### 패키지 ggplot2\n\n\n::: {.cell}\n\n```{.r .cell-code}\nlibrary(ggplot2)\nggplot(data = InsectSprays, aes(x = spray, y = count)) +\n  geom_boxplot()\n```\n\n::: {.cell-output-display}\n![](box-plot_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::\n\n\n",
     "supporting": [
       "box-plot_files"
     ],
