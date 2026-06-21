@@ -1,0 +1,105 @@
+---
+title: 기술통계 Descriptive Statistics
+description: 데이터를 간단히 기술적으로 분석
+date: 2026-06-21
+date-modified: 2026-06-21
+categories: [descriptive, 기술통계, skimr, psych]
+---
+
+#### R 내장 함수 (Base R)
+
+##### 전체 데이터 요약 summary()
+
+데이터프레임의 모든 열에 대해 기초 통계량(최솟값, 1사분위수, 중앙값, 평균, 3사분위수, 최댓값 및 범주형 변수의 빈도)을 한 번에 보기
+
+```{r}
+# iris 데이터 요약
+summary(iris)
+```
+
+##### 개별 기술통계량
+
+평균 mean(), 중앙값 median(), 표준편차 sd(), 분산 var(), 사분위수 quantile() 
+
+데이터에 결측값이 있는 경우 `na.rm = TRUE` 지정
+
+```{r}
+# 평균, 중앙값, 표준편차, 분산, 사분위수 계산
+mean(iris$Sepal.Length)
+median(iris$Sepal.Length)
+sd(iris$Sepal.Length)
+var(iris$Sepal.Length)
+quantile(iris$Sepal.Length, probs = c(0.25, 0.5, 0.75)) # 사분위수
+```
+
+##### 빈도표(범주형 데이터)
+
+```{r}
+# 빈도표
+freq_table <- table(iris$Species)
+print(freq_table)
+# 백분율(상대빈도) 변환
+prop.table(freq_table)
+```
+
+#### 패키지 dplyr
+
+##### 데이터 구조 파악 glimpse()
+
+데이터프레임의 행/열 개수, 변수 타입, 앞부분의 데이터를 가로 방향으로 콤팩트하게 보여줌
+
+```{r}
+#| warning: false
+library(dplyr)
+glimpse(iris)
+```
+
+##### 그룹별 요약 통계량 broup_by() + summarise()
+
+파이핑을 사용해 원하는 통계량을 갖는 티블을 만들어 출력
+
+```{r}
+library(dplyr)
+
+iris_summary <- iris %>%
+  group_by(Species) %>%
+  summarise(
+    Count = n(),
+    Mean_Length = mean(Sepal.Length),
+    SD_Length = sd(Sepal.Length),
+    Max_Width = max(Sepal.Width)
+  )
+
+print(iris_summary)
+```
+
+#### 패키지 skimr
+
+```{r}
+#| warnings: false
+library(skimr)
+skim(iris)
+```
+
+#### 패키지 psych
+
+```{r}
+library(psych)
+
+# 전체 요약
+describe(iris)
+
+# Species(그룹)별 요약
+describeBy(iris, group = iris$Species)
+```
+
+
+#### 요약 가이드:
+
+간단하고 빠르게 데이터의 전반적 수치만 보고 싶을 때: Base R의 summary()
+
+보고서나 논문에 들어갈 그룹별 평균/표준편차 테이블을 만들 때: dplyr 패키지의 group_by() %>% summarise()
+
+분포의 비대칭성(왜도/첨도) 등 정밀한 분포 통계가 필요할 때: psych 패키지의 describe()
+
+시각적으로 결측치와 분포를 직관적으로 파악하고 싶을 때: skimr 패키지의 skim()
