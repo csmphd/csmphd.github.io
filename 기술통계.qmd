@@ -81,8 +81,8 @@ glimpse(iris)
 ```{r}
 library(dplyr)
 
-iris_summary <- iris %>%
-  group_by(Species) %>%
+iris_summary <- iris |>
+  group_by(Species) |>
   summarise(
     Count = n(),
     Mean_Length = mean(Sepal.Length),
@@ -128,7 +128,7 @@ library(summarytools)
 descr(iris)
 
 # 전체 데이터셋 탐색 보고서 생성 (RStudio Viewer 또는 브라우저용)
-view(dfSummary(iris))
+dfSummary(iris)
 ```
 
 #### 요약 가이드:
