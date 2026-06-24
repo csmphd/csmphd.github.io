@@ -6,6 +6,18 @@ date-modified: 2026-06-21
 categories: [descriptive, 기술통계, skimr, psych]
 ---
 
+#### R 기술통계 및 요약 명령어 분류표
+
+| 분류 | 패키지 | 대표 함수 / 명령어 | 용도 |
+|-----------|------------|--------------------|------------------------------|
+| Base R | base / stats | summary(), str(), head() | 데이터셋 전체의 전반적인 요약 및 구조 확인 |
+|  |  | mean(), sd(), quantile(), table() | 개별 단변량 통계량 및 빈도표 계산 |
+|  |  | aggregate(), tapply() | 그룹별 요약 통계량 계산 |
+| Tidyverse | dplyr | group_by(), summarise(), count() | 그룹별 파이프(\|\> 또는 %\>%) 연산 |
+| 전문 요약 | psych | describe(), describeBy() | 평균, 표준편차, 왜도, 첨도 등 다변량 임상/사회과학 통계 |
+|  | skimr | skim() | 데이터 타입별 시각화(스파크라인)를 포함한 세련된 요약 |
+|  | summarytools | dfSummary(), descr() | HTML/Markdown 보고서 형태의 데이터 프로파일링 |
+
 #### R 내장 함수 (Base R)
 
 ##### 전체 데이터 요약 summary()
@@ -14,12 +26,13 @@ categories: [descriptive, 기술통계, skimr, psych]
 
 ```{r}
 # iris 데이터 요약
+str(iris)
 summary(iris)
 ```
 
 ##### 개별 기술통계량
 
-평균 mean(), 중앙값 median(), 표준편차 sd(), 분산 var(), 사분위수 quantile() 
+평균 mean(), 중앙값 median(), 표준편차 sd(), 분산 var(), 사분위수 quantile()
 
 데이터에 결측값이 있는 경우 `na.rm = TRUE` 지정
 
@@ -40,6 +53,13 @@ freq_table <- table(iris$Species)
 print(freq_table)
 # 백분율(상대빈도) 변환
 prop.table(freq_table)
+```
+
+##### 그룹별 요약
+
+```{r}
+# Species(품종)별 Sepal.Length(꽃받침 길이)의 평균 계산
+aggregate(Sepal.Length ~ Species, data = iris, FUN = mean)
 ```
 
 #### 패키지 dplyr
@@ -91,15 +111,34 @@ describe(iris)
 
 # Species(그룹)별 요약
 describeBy(iris, group = iris$Species)
+
+# 수치형 변수(1~4열)만 선택하여 상세 기술통계량 확인
+describe(iris[, 1:4])
+
+# Species별로 요약 통계량 계산
+describeBy(iris[, 1:4], group = iris$Species)
 ```
 
+#### 패키지 summarytools
+
+```{r}
+library(summarytools)
+
+# 기본 기술통계량 출력
+descr(iris)
+
+# 전체 데이터셋 탐색 보고서 생성 (RStudio Viewer 또는 브라우저용)
+view(dfSummary(iris))
+```
 
 #### 요약 가이드:
 
 간단하고 빠르게 데이터의 전반적 수치만 보고 싶을 때: Base R의 summary()
 
-보고서나 논문에 들어갈 그룹별 평균/표준편차 테이블을 만들 때: dplyr 패키지의 group_by() %>% summarise()
+보고서나 논문에 들어갈 그룹별 평균/표준편차 테이블을 만들 때: dplyr 패키지의 group_by() %\>% summarise()
 
 분포의 비대칭성(왜도/첨도) 등 정밀한 분포 통계가 필요할 때: psych 패키지의 describe()
 
 시각적으로 결측치와 분포를 직관적으로 파악하고 싶을 때: skimr 패키지의 skim()
+
+결측치 비율, 고유값 개수, 대략적인 분포 그래프까지 포함된 완전한 데이터 탐색(EDA) 보고서: summarytools 패키지의 dfSummary()
