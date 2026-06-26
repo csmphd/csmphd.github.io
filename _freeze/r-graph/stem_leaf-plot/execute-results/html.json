@@ -1,0 +1,15 @@
+{
+  "hash": "380c2a34a2b04969f3b46f0a73f4559b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: 줄기 잎 그림 stem and leaf plot\ndescription: R에서 줄기 잎 그림 그리는 방법\ndate: 2026-06-26\ndate-modified: 2026-06-26\ncategories: [base graph, stem and leaf plot]\n---\n\n#### 패키지 Graphics\n\n\n::: {.cell}\n\n```{.r .cell-code}\nscores <- c(72, 75, 81, 84, 88, 93, 95, 102, 105)\nstem(scores)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n\n  The decimal point is 1 digit(s) to the right of the |\n\n   7 | 25\n   8 | 148\n   9 | 35\n  10 | 25\n```\n\n\n:::\n:::\n\n\n\n::: {.cell}\n\n```{.r .cell-code}\nstem(islands)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n\n  The decimal point is 3 digit(s) to the right of the |\n\n   0 | 00000000000000000000000000000111111222338\n   2 | 07\n   4 | 5\n   6 | 8\n   8 | 4\n  10 | 5\n  12 | \n  14 | \n  16 | 0\n```\n\n\n:::\n\n```{.r .cell-code}\nstem(log10(islands))\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n\n  The decimal point is at the |\n\n  1 | 1111112222233444\n  1 | 5555556666667899999\n  2 | 3344\n  2 | 59\n  3 | \n  3 | 5678\n  4 | 012\n```\n\n\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
