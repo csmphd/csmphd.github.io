@@ -1,0 +1,19 @@
+---
+title: 줄기 잎 그림 stem and leaf plot
+description: R에서 줄기 잎 그림 그리는 방법
+date: 2026-06-26
+date-modified: 2026-06-26
+categories: [base graph, stem and leaf plot]
+---
+
+#### 패키지 Graphics
+
+```{r}
+scores <- c(72, 75, 81, 84, 88, 93, 95, 102, 105)
+stem(scores)
+```
+
+```{r}
+stem(islands)
+stem(log10(islands))
+```
