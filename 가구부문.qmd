@@ -1,6 +1,6 @@
 ---
-title: 인구총조사 가구부문
-description: R에서 줄기 잎 그림 그리는 방법
+title: 1인가구 분석
+description: 인구총조사 가구부문 데이터 사용
 date: 2026-07-15
 date-modified: 2026-07-15
 categories: [KOSIS, 인구총조사, 1인가구]
