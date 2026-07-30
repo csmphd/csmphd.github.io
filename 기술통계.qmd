@@ -97,6 +97,7 @@ print(iris_summary)
 
 ```{r}
 #| warnings: false
+library(rlang)
 library(skimr)
 skim(iris)
 ```
